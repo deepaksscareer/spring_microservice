@@ -1,0 +1,40 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Kotlin-specific
+*.iml
+*.class
+*.jar
+*.war
+*.ear
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.ipr
+*.iml
+out/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+logs/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Environment/Config
+.env
+*.local
+*.properties.local
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+*.orig
