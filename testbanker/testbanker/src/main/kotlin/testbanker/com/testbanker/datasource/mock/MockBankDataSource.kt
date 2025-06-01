@@ -5,7 +5,13 @@ import testbanker.com.testbanker.datasource.BankDataSource
 import testbanker.com.testbanker.model.Bank
 @Repository
 class MockBankDataSource: BankDataSource {
-    override fun getBanks(): Collection<Bank> {
-        TODO("Not yet implemented")
+
+    val listBank = listOf(
+        Bank(accountNumber = "A1", transactionFee = 0, trust = 1.0),
+        Bank(accountNumber = "A2", transactionFee = 0, trust = 1.0),
+        Bank(accountNumber = "A3", transactionFee = 1, trust = 1.0)
+    )
+    override fun retrieveBanks(): Collection<Bank> {
+        return listBank
     }
 }
