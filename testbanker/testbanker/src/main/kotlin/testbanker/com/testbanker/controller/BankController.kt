@@ -11,5 +11,5 @@ import testbanker.com.testbanker.service.BankService
 class BankController(private val service: BankService) {
 
     @GetMapping
-    fun getBanks(): String = "Bank 1"// service.getBanks()
+    fun getBanks() = service.getBanks()// service.getBanks()
 }
