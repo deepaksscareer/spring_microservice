@@ -29,6 +29,18 @@ class BankControllerTest{
                 jsonPath("$[0].accountNumber"){value("A1")}
             }
 
+    }
 
+    @Test
+    fun `get bank details for account `() {
+
+        val accountNumber = "A1"
+
+        // given //when
+        mockMvc.get("/api/banks/$accountNumber")
+            .andDo { print() }
+            .andExpect {
+                status { isOk() }
+            }
     }
 }

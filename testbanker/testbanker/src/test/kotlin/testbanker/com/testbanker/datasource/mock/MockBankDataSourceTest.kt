@@ -31,4 +31,6 @@ class MockBankDataSourceTest{
         assertThat(banks).anyMatch{ it.trust != 0.0}
         assertThat(banks).anyMatch{ it.transactionFee != 0}
     }
+
+
 }
